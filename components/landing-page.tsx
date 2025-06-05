@@ -25,6 +25,7 @@ import {
   Heart,
   Sparkles,
   Camera,
+  GitMerge,
   Download,
   Share2,
   Volume2,
@@ -132,8 +133,8 @@ export function LandingPage() {
     {
       number: "04",
       title: "Comparte al mundo",
-      description: "Publica, exporta y distribuye tu música globalmente",
-      icon: Share2,
+      description: "Guarda, versiona y comparte tu música globalmente",
+      icon: GitMerge,
     },
   ]
 
@@ -243,11 +244,11 @@ export function LandingPage() {
             <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in-up">
               Transcribe. Colabora.
               <br />
-              <span className="text-5xl md:text-6xl">Crea Historia.</span>
+              <span className="text-5xl md:text-6xl">Almacena Historia.</span>
             </h1>
 
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in-up delay-200">
-              La primera plataforma que combina IA y colaboración en tiempo real para que los músicos creen, editen, 
+              La primera plataforma que combina IA, almacenamiento y colaboración en tiempo real para que los músicos creen, guarden, editen, 
               compartan sus partituras de forma sencilla y segura.
             </p>
 
@@ -282,7 +283,7 @@ export function LandingPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-4">Editor Profesional</h3>
                     <p className="text-muted-foreground mb-6">
-                      Edita tus partituras con herramientas precisas de notación musical y colabora en tiempo real con otros músicos, todo en una plataforma integrada.
+                      Edita tus partituras con herramientas precisas de notación musical, almacena en repositorios y colabora en tiempo real con otros músicos.
                     </p>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
