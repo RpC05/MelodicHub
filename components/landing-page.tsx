@@ -103,12 +103,6 @@ export function LandingPage() {
       gradient: "from-orange-500 to-red-500",
     },
     {
-      icon: Shield,
-      title: "Protección Blockchain",
-      description: "Derechos de autor protegidos con tecnología blockchain inmutable",
-      gradient: "from-indigo-500 to-purple-500",
-    },
-    {
       icon: Globe,
       title: "Comunidad Global",
       description: "Conecta con compositores, intérpretes y productores mundialmente",
@@ -247,14 +241,14 @@ export function LandingPage() {
             </div>
 
             <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-600 to-pink-600 bg-clip-text text-transparent animate-fade-in-up">
-              Compón. Colabora.
+              Transcribe. Colabora.
               <br />
               <span className="text-5xl md:text-6xl">Crea Historia.</span>
             </h1>
 
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in-up delay-200">
-              La primera plataforma que combina IA, blockchain y colaboración en tiempo real para revolucionar cómo los
-              músicos crean, comparten y protegen su arte.
+              La primera plataforma que combina IA y colaboración en tiempo real para que los músicos creen, editen, 
+              compartan sus partituras de forma sencilla y segura.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-400">
@@ -288,7 +282,7 @@ export function LandingPage() {
                   <div>
                     <h3 className="text-2xl font-bold mb-4">Editor Profesional</h3>
                     <p className="text-muted-foreground mb-6">
-                      Edita partituras con la precisión de MuseScore y la colaboración de Google Docs.
+                      Edita tus partituras con herramientas precisas de notación musical y colabora en tiempo real con otros músicos, todo en una plataforma integrada.
                     </p>
                     <div className="space-y-3">
                       <div className="flex items-center gap-3">
@@ -333,23 +327,6 @@ export function LandingPage() {
         </div>
       </section>
 
-      {/* Estadísticas animadas */}
-      <section className="py-16 px-4 bg-gradient-to-r from-primary/5 to-purple-600/5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                  {stat.value.toLocaleString()}
-                  {stat.suffix}
-                </div>
-                <div className="text-muted-foreground font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Cómo funciona - Timeline animado */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
@@ -390,6 +367,23 @@ export function LandingPage() {
                 <div className="hidden md:block w-6 h-6 bg-primary rounded-full border-4 border-background shadow-lg z-10"></div>
 
                 <div className="flex-1"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Estadísticas animadas */}
+      <section className="py-16 px-4 bg-gradient-to-r from-primary/5 to-purple-600/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
+                  {stat.value.toLocaleString()}
+                  {stat.suffix}
+                </div>
+                <div className="text-muted-foreground font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -626,7 +620,7 @@ export function LandingPage() {
                 MelodicHub
               </div>
               <p className="text-muted-foreground mb-6 max-w-md">
-                Revolucionando la creación musical con IA, blockchain y colaboración global. El futuro de la música
+                Revolucionando la creación musical con IA y colaboración global. El futuro de la música
                 comienza aquí.
               </p>
               <div className="flex gap-4">
